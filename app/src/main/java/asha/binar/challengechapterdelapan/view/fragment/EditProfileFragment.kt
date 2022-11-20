@@ -59,7 +59,7 @@ class EditProfileFragment : Fragment(), View.OnClickListener {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentEditProfileBinding.inflate(inflater, container, false)
 
         (activity as AppCompatActivity?)!!.supportActionBar?.title = "Edit Profile"

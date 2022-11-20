@@ -6,6 +6,7 @@
     android:background="@color/midnight_blue"
     tools:context=".view.fragment.SpalshFragment">
 
+    <!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute -->
     <ImageView
         android:id="@+id/img_logo"
         android:layout_width="220dp"

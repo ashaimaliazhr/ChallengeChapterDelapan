@@ -1,12 +1,10 @@
 package asha.binar.challengechapterdelapan.view.dialogfragment
 
 import android.os.Bundle
-import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.DialogFragment
-import asha.binar.challengechapterdelapan.R
 import asha.binar.challengechapterdelapan.databinding.FragmentShowImageDialogBinding
 import com.bumptech.glide.Glide
 import dagger.hilt.android.AndroidEntryPoint
@@ -20,7 +18,7 @@ class ShowImageDialogFragment (private val imgUrl: String) : DialogFragment() {
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
         _binding = FragmentShowImageDialogBinding.inflate(inflater, container, false)
         return binding.root
     }

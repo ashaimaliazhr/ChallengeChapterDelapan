@@ -7,6 +7,14 @@ plugins {
 }
 
 android {
+    signingConfigs {
+        release {
+            storeFile file('D:\\kuliah\\stupen-binar\\ChallengeChapterDelapan\\app\\binarian.jks')
+            storePassword 'password1'
+            keyAlias 'key0'
+            keyPassword 'password1'
+        }
+    }
     compileSdk 33
 
     defaultConfig {
@@ -28,9 +36,18 @@ android {
     }
 
     buildTypes {
-        release {
+        debug {
             minifyEnabled false
+            debuggable true
+            buildConfigField("String", "APP_NAME", "\"CHF QA\"")
+            signingConfig signingConfigs.debug
+        }
+        release {
+            minifyEnabled true
+            debuggable false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+            buildConfigField("String", "APP_NAME", "\"CHF QA\"")
+            signingConfig signingConfigs.debug
         }
     }
     compileOptions {

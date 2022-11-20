@@ -18,6 +18,7 @@
             android:layout_height="150dp"
             app:cardCornerRadius="10dp"
             android:layout_gravity="center_horizontal">
+            <!--suppress AndroidUnknownAttribute, AndroidUnknownAttribute -->
             <ImageView
                 android:id="@+id/img_cast"
                 android:scaleType="fitXY"
